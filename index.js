@@ -14,3 +14,8 @@ app.listen(PORT, () => {
   console.log('server started on port ${PORT}');
 console.log(userAgent.toString());
 });
+
+app.get('/', (req, res) => {
+    console.log(userAgent.toString());
+    res.send("GET Request Called")
+})
