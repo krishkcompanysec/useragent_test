@@ -16,6 +16,7 @@ console.log(userAgent.toString());
 });
 
 app.get('/', (req, res) => {
+    console.log("Get Request Called");
     console.log(userAgent.toString());
     res.send("GET Request Called")
 })
